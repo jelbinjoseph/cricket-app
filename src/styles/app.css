@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #020617, #020617);
+  color: #e5e7eb;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+
+h1 {
+  margin-bottom: 6px;
+  font-size: 26px;
+  color: #38bdf8;
+}
+
+.team {
+  font-size: 14px;
+  color: #22c55e;
+  margin-bottom: 18px;
+}
+
+.score {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.overs {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.controls button {
+  padding: 14px;
+  font-size: 15px;
+  background: #020617;
+  color: #f8fafc;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.controls button:hover {
+  background: #38bdf8;
+  color: #020617;
+  transform: translateY(-1px);
+}
+
+.controls button:active {
+  transform: translateY(0);
+}
+
+.end-btn {
+  grid-column: span 3;
+  background: #dc2626;
+  border: none;
+}
+
+.end-btn:hover {
+  background: #f87171;
+}
+
+hr {
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid #1e293b;
+}
+@media (max-width: 360px) {
+  .controls button {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 36px;
+  }
+}
+
+/* 📲 Tablets */
+@media (min-width: 600px) {
+  .app {
+    max-width: 480px;
+  }
+
+  .score {
+    font-size: 46px;
+  }
+
+/* 💻 Laptops & desktops */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+}
