@@ -1,2 +1,2 @@
-# cricket-app
+# cricket project
 displaying scorecard
